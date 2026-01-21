@@ -1,0 +1,45 @@
+name: drugdozer
+description: "DrugDoZer App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Basic UI
+  google_fonts: ^7.0.2
+  
+  # State Management
+  provider: ^6.1.2
+  
+  # Dependency Injection
+  get_it: ^9.2.0
+  
+  # Sharing
+  share_plus: ^12.0.1
+  
+  # Local Storage (for later use)
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+  
+  # Fonts
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
